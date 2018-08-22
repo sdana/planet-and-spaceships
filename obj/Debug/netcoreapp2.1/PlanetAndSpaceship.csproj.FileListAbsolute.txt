@@ -1,0 +1,11 @@
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\bin\Debug\netcoreapp2.1\PlanetAndSpaceship.deps.json
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\bin\Debug\netcoreapp2.1\PlanetAndSpaceship.runtimeconfig.json
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\bin\Debug\netcoreapp2.1\PlanetAndSpaceship.runtimeconfig.dev.json
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\bin\Debug\netcoreapp2.1\PlanetAndSpaceship.dll
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\bin\Debug\netcoreapp2.1\PlanetAndSpaceship.pdb
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.csprojAssemblyReference.cache
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.csproj.CoreCompileInputs.cache
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.AssemblyInfoInputs.cache
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.AssemblyInfo.cs
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.dll
+C:\Users\Seth\Workspace\exercises\PlanetAndSpaceship\obj\Debug\netcoreapp2.1\PlanetAndSpaceship.pdb
