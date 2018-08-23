@@ -21,48 +21,34 @@ namespace PlanetAndSpaceship
 
             List<Dictionary<string, string>> visitedPlanets = new List<Dictionary<string, string>>();
                 Dictionary<string, string> Mercury = new Dictionary<string, string>() {
-                    {"Mariner 10", "Mercury"}, 
-                    {"MESSENGER", "Mercury"},
+                    {"Mercury","Mariner 10"}, 
                 };
                 
                 Dictionary<string, string> Venus = new Dictionary<string, string>() {
-                    {"Mariner 2", "Venus"}, 
-                    {"Mariner 5", "Venus"},
-                };
-
-                Dictionary<string, string> Earth = new Dictionary<string, string>(){
-                    {"Pioneer 10", "Earth"}, 
-                    {"Pioneer 11", "Earth"}, 
-                    {"Voyager", "Earth"},
+                    {"Venus", "Mariner 10"},
                 };
 
                 Dictionary<string, string> Mars = new Dictionary<string, string>() {
-                    {"Mariner 3", "Mars"},
-                    {"Mariner 4", "Mars"}, 
-                    {"Mariner 6", "Mars"},
-                    {"Mariner 7", "Mars"},
+                    {"Mars", "Mariner 3"},
                 };
 
                 Dictionary<string, string> Jupiter = new Dictionary<string, string>(){
-                    {"Pioneer 10","Jupiter"}, 
-                    {"Pioneer 11", "Jupiter"}, 
-                    {"Gallileo","Jupiter"},
+                    {"Jupiter", "Gallileo"},
                 };
 
                 Dictionary<string, string> Saturn = new Dictionary<string, string>() {
-                    {"Cassini", "Saturn"},
+                    {"Saturn", "Cassini"},
                 };
 
                 Dictionary<string, string> Uranus = new Dictionary<string, string>() {
-                    {"Voyager 2", "Uranus"},
+                    {"Uranus", "Voyager 2"},
                 };
 
                 Dictionary<string, string> Neptune = new Dictionary<string, string>(){
-                    {"Voyager 2", "Neptune"}
+                    {"Neptune", "Voyager 2"}
                 };
                 visitedPlanets.Add(Mercury);
                 visitedPlanets.Add(Venus);
-                visitedPlanets.Add(Earth);
                 visitedPlanets.Add(Mars);
                 visitedPlanets.Add(Jupiter);
                 visitedPlanets.Add(Saturn);
@@ -71,17 +57,15 @@ namespace PlanetAndSpaceship
 
                 foreach (string planet in planetList)
                 {
-                    System.Console.WriteLine($"Visitors to {planet}:");
-                    foreach (Dictionary<string, string> probeList in visitedPlanets)
+                    List<string> probeNames = new List<string>();
+                    foreach (Dictionary<string, string> probe in visitedPlanets)
                     {
-                        foreach (KeyValuePair<string, string> probePlanet in probeList)
+                        if (probe.ContainsKey(planet))
                         {
-                           if (probePlanet.Value == planet)
-                           {
-                               System.Console.WriteLine(probePlanet.Key);
-                           }
+                            probeNames.Add(probe[planet]);
                         }
                     }
+                    System.Console.WriteLine($"{planet} has been visited by: {String.Join(",", probeNames)}");
                 }
 
         }
